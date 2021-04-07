@@ -4,7 +4,9 @@
     "dev": "vite --port 3333 --open",
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite preview",
-    "preview-https": "serve dist"
+    "preview-https": "serve dist",
+    "cy": "cypress open-ct",
+    "cy:run": "cypress run-ct"
   },
   "dependencies": {
     "@vueuse/core": "^4.6.3",
@@ -17,6 +19,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.2",
+    "@cypress/vite-dev-server": "^1.2.0",
+    "@cypress/vue": "^3.0.0",
     "@iconify/json": "^1.1.323",
     "@intlify/vite-plugin-vue-i18n": "^2.0.4",
     "@types/nprogress": "^0.2.0",
@@ -25,6 +29,7 @@
     "@vue/compiler-sfc": "^3.0.10",
     "@vue/server-renderer": "^3.0.10",
     "cross-env": "^7.0.3",
+    "cypress": "^7.0.1",
     "eslint": "^7.23.0",
     "https-localhost": "^4.6.4",
     "markdown-it-prism": "^2.1.6",
